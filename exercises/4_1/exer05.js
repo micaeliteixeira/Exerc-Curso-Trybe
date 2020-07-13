@@ -10,4 +10,4 @@ if (sumAgle!==180) {
  console.log("Soma dos três ângulos não representa um triangulo");
 }else{
  console.log("Soma dos três ângulos representa um triangulo");
-};
+}

@@ -8,4 +8,4 @@ console.log('positive');
  console.log('negative');
  }else{
   console.log('zero');
- };
+ }
