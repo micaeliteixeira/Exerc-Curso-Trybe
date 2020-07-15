@@ -1,4 +1,4 @@
-JavaScript - Primeiros passos
+Pasta de exercícios 
 =======
 
 Exercícios 
