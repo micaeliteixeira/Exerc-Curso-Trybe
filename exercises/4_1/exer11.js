@@ -13,22 +13,24 @@ De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir 
 De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.*/
 
-let newSal = 0,
-    IR = 0;
-    salBruto = 5600.10,
+let INSS = 0,
+    IR = 0,
+    newSal=0,
+    salBruto = 5000,
     salLiq = 0;
 
 
 if (salBruto<= 1556.94 ){
-    newSal = salBruto * 0.08;
+    INSS = salBruto * 0.08;
 }else if (salBruto>=1556.95 && salBruto<=2594.92){
-    newSal = salBruto * 0.09;
+    INSS = salBruto * 0.09;
 }else if (salBruto>=2594.93 && salBruto<=5189.82){
-    newSal = salBruto * 0.11;
+    INSS = salBruto * 0.11;
 }else {
-    newSal = salBruto-570.88;
+    INSS = salBruto-570.88;
 }
 
+newSal = salBruto - INSS;
 
 if (newSal<=1903.98){
     IR = newSal;

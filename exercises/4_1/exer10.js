@@ -3,7 +3,7 @@ Atente que, sobre o custo do produto, incide um imposto de 20%.
 Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.*/
 
 
-let custoProduto = -3,
+let custoProduto = 100,
     valorVenda = 180;
 
 let lucroUnitario = (valorVenda-custoProduto) * 0.8;
