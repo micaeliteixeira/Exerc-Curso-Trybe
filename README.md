@@ -1,7 +1,7 @@
-HTML Semântico
+Pasta de Exercícios 
 =======
 
 Exercício
 -----------
 
-Essa pasta contém um página html no qual era proposto o desenvolvimento de uma página em HTML semantico e  estilização em CSS. Ambos são para fixação de conteúdo do curso de desenvolvimento de software da Trybe.
+Essa pasta contém resolução de exercícios para fixação de conteúdo, feitos durante o curso de desenvolvimento de software da Trybe.
