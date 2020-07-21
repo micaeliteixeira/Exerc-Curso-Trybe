@@ -73,7 +73,21 @@
          changeH();
 
         //5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+         function changeUpperCase(){
+          let textUpper= document.getElementsByTagName('p')[0];
+          textUpper.innerHTML = textUpper.innerHTML.toUpperCase();
+         }
+         changeUpperCase();
+
         //6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+         function changeAll(){
+          let textAll= document.getElementsByTagName('p');
+          
+          for (let i = 0; i<textAll.length; i +=1){
+          console.log (textAll[i].innerHTML);
+         }
+         }
+         changeAll();
         
     </script>
   </body>
