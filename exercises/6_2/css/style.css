@@ -1,0 +1,16 @@
+body {
+ width: 70%;
+ margin:0  auto 0 auto;
+ font-family: Helvetica, sans-serif;
+}
+
+.title {
+ font-family: 'Patrick Hand SC'
+}
+
+hr{
+ clear: both;
+ border: 0;
+ height: 1px;
+ background-image: linear-gradient(to right,rgba(62, 19, 117, 0),rgba(104, 166, 190, 0.75),rgba(62, 19, 117, 0));
+}
