@@ -1,87 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="style.css" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
- <title>Fomulário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--style do justvalidate-->
+  <link rel="stylesheet" href="css/DatePickerX.min.css"> <!--style do js  data por biblioteca-->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> <!--fonte-->
+  <link href="css/bulma.min.css" rel="stylesheet"> <!--style por biblioteca-->
+  <link href="css/style.css" rel="stylesheet"> <!--meu style-->
+  <title>Fomulário</title>
 </head>
+
 <body>
- <!---CABEÇALHO--> 
- <header class = "head-form">
-   <h1>Formulário de inscrição:</h1>
-   <p><em>Quer trabalhar aqui? Preencha o formulário:</em></p><br>
-   <hr>
- </header>
+  <!---CABEÇALHO--> 
+  <header class="section">
+    <h1 class="title has-text-centered">Formulário de inscrição:</h1>
+    <p class="subtitle has-text-centered">
+      <em>Quer trabalhar aqui? Preencha o formulário:</em>
+      </p><br>
+    <hr>
+  </header>
 
   <!--FORMULÁRIO-->
   <form action="" method="GET" class="form-work" id="form">
-    <div class="container">
-      <div class="first">
-        <fieldset class="first">
-        
-          <!--NOME-->
-          <label for="name">Nome:</label>
-          <input type="text" name="name" id="name" maxlength="40" required="required" placeholder="Digite seu nome.">
-
-          <!--EMAIL-->
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" maxlength="50" required="required" placeholder="Digite seu email.">
-
-          <!--CPF-->
-          <label for="cpf">CPF:</label>
-          <input type="text" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números.">
-
-          <!--ENDEREÇO-->
-          <label for="address">Endereço:</label>
-          <input type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número.">
-
-          <!--CIDADE-->
-          <label for="city">Cidade:</label>
-          <input type="text" name="city" id="city" maxlength="28" required="required">
-
-          <!--ESTADO-->
-          <label for="state">Estado:</label>
-          <select required="required" name="state" id="state"></select>
-
-          <!--TIPO DE MORADIA-->
-          <label for='type'>Tipo de moradia:</label>
-          <input type="radio" name="type" id="type-home" required="required">
-           <label for="type-home">Casa</label>
-          <input type="radio" name="type" id="type-apt" required="required">
-            <label for="type-apt">Apartamento</label>
+       
+    <!--NOME-->
+    <div class="field">
+      <label class="label"for="name">Nome:</label>
+      <div class="control">
+       <input class="input is-info is-rounded"type="text" name="name" id="name" maxlength="40" required="required" placeholder="Digite seu nome.">
+      </div>
+    </div>
           
-        </fieldset>
+    <!--EMAIL-->
+    <div class="field">
+      <label class="label" for="email">Email:</label>
+      <div class="control">
+       <input class="input is-info is-rounded"  type="text" name="email" id="email" maxlength="50" required="required" placeholder="Digite seu email." autocomplete="off" data-validate-field="email">
       </div>
+    </div>
 
-      <div class="second">
-        <fieldset class="second">
-          <legend> Dados do seu último emprego:</legend>
-​
-          <!-- RESUMO CURRICULO -->
-          <label for="resume-summary">Resumo do currículo:</label><br>
-          <textarea name="resume-summary" id="resume-summary" maxlength="1000" required="required"></textarea>
-​
-          <!-- CARGO -->
-          <label for="office">Cargo:</label>
-          <input type="text" name="office" id="office" maxlength="40" required="required">
-​
-          <!-- JOB DESCRIPTION -->
-          <label for="job-description">Descrição do cargo:</label>
-          <input type="text" name="job-description" id="job-description" maxlength="500" required="required">
-​
-          <!-- DATA DE INICIO -->
-          <label for="date">Data:</label>
-          <input type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required">
-          <span id='message'></span>
-​
-        </fieldset>
+    <!--CPF-->
+    <div class="field">
+      <label class="label" for="cpf">CPF:</label>
+      <div class="control"></div>
+       <input class="input is-info is-rounded"type="text" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field = "cpf">
+       </div>
+     </div>
+
+    <!--ENDEREÇO-->
+    <div class="field">
+      <label class="label" for="address">Endereço:</label>
+      <div class="control">
+       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número.">
       </div>
-      
     </div>  
+
+    <!--CIDADE-->
+    <div class="field">
+      <label class="label" for="city">Cidade:</label>
+      <div class="control">
+       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required">
+      </div>
+    </div>  
+    
+    <!--ESTADO-->
+    <div class="field">
+      <label class="label" for="state">Estado:</label>
+      <div class="control">
+        <div class="select is-info is-rounded is-medium">
+          <select required="required" name="state" id="state"></select>
+        <div>
+      </div>
+    </div>
+
+    <!--TIPO DE MORADIA-->
+    <div class="field">
+     <label class="label" for='type'>Tipo de moradia:</label>
+     <label class="radio" for="type-home">
+        <input type="radio" name="type" id="type-home" required="required">
+        Casa 
+      </label>
+     <label class="radio" for="type-apt">
+        <input type="radio" name="type" id="type-apt" required="required">
+        Apartamento
+      </label>
+    </div>
+          
+       
+    <p class="subtitle"> Dados do seu último emprego:</p>
+​
+    <!-- RESUMO CURRICULO -->
+    <div class="field">
+     <label class="label" for="resume-summary">Resumo do currículo:</label><br>
+     <div class="control">
+       <textarea class="textarea is-info" name="resume-summary" id="resume-summary" maxlength="1000" required="required"></textarea>
+     </div>
+    </div> 
+​
+    <!-- CARGO -->
+    <div class="field">
+      <label class="label" for="office">Cargo:</label>
+      <div class="control">
+        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required">
+      </div>
+    </div>  
+​
+    <!-- DESCRIÇÃO DO CARGO -->
+    <div class="field">
+      <label class="label" for="job-description">Descrição do cargo:</label>
+      <div class="control">
+        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required">
+      </div>
+    </div>  
+​
+    <!-- DATA DE INICIO -->
+    <div class="field">
+      <label class="label" for="date">Data:</label>
+      <div class="control">
+        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required">
+        <span id='message'></span>
+      </div>
+    </div>  
+​
+   <!-- BOTAO ENVIAR -->
+   <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link" type="submit">Enviar!</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light">Limpar</button>
+    </div>
+   </div>
+      
+    
   </form>
- 
- <script type='text/javascript' src='script.js'></script>
+
+ <script type='text/javascript' src='js/script.js'></script> <!--meu-->
+ <script src="js/DatePickerX.min.js"></script> <!--javascript da data por biblioteca -->
+ <script src="js/just-validate.min.js"></script> <!--javascript de validação por biblioteca -->
+ <script>
+  document.getElementById('date').DatePickerX.init()
+  
+ </script>
 </body>
 </html>
