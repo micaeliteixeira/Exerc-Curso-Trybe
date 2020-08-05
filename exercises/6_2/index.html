@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/justValidateTooltip.min.css"> <!--style do justvalidate-->
+  <link rel="stylesheet" href="css/DatePickerX.min.css"> <!--style do js  data por biblioteca-->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> <!--fonte-->
+  <link href="css/bulma.min.css" rel="stylesheet"> <!--style por biblioteca-->
+  <link href="css/style.css" rel="stylesheet"> <!--meu style-->
+  <title>Fomulário</title>
+</head>
+
+<body>
+  <!---CABEÇALHO--> 
+  <header class="section">
+    <h1 class="title has-text-centered">Formulário de inscrição:</h1>
+    <p class="subtitle has-text-centered">
+      <em>Quer trabalhar aqui? Preencha o formulário:</em>
+      </p><br>
+    <hr>
+  </header>
+
+  <!--FORMULÁRIO-->
+  <form action="" method="GET" class=" js-form form form-work" id="form ">
+       
+    <!--NOME-->
+    <div class="field">
+      <label class="label"for="name">Nome:</label>
+      <div class="control">
+       <input class="input is-info is-rounded"type="text" name="name" id="name" maxlength="40" required="required" placeholder="Digite seu nome." data-validate-field="name">
+      </div>
+    </div>
+          
+    <!--EMAIL-->
+    <div class="field">
+      <label class="label" for="email">Email:</label>
+      <div class="control">
+       <input class="input is-info is-rounded"  type="email" name="email" id="email" maxlength="50" required="required" placeholder="Digite seu email." data-validate-field="email">
+      </div>
+    </div>
+
+    <!--CPF-->
+    <div class="field">
+      <label class="label" for="cpf">CPF:</label>
+      <div class="control">
+       <input class="input is-info is-rounded" type="number" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field="cpf">
+       </div>
+     </div>
+
+    <!--ENDEREÇO-->
+    <div class="field">
+      <label class="label" for="address">Endereço:</label>
+      <div class="control">
+       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número.">
+      </div>
+    </div>  
+
+    <!--CIDADE-->
+    <div class="field">
+      <label class="label" for="city">Cidade:</label>
+      <div class="control">
+       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required">
+      </div>
+    </div>  
+    
+    <!--ESTADO-->
+    <div class="field">
+      <label class="label" for="state">Estado:</label>
+      <div class="control">
+        <div class="select is-info is-rounded is-medium">
+          <select required="required" name="state" id="state" ></select>
+        <div>
+      </div>
+    </div>
+
+    <!--TIPO DE MORADIA-->
+    <div class="field">
+     <label class="label" for='type'>Tipo de moradia:</label>
+     <label class="radio" for="type-home">
+        <input type="radio" name="type" id="type-home" required="required" >
+        Casa 
+      </label>
+     <label class="radio" for="type-apt">
+        <input type="radio" name="type" id="type-apt" required="required" >
+        Apartamento
+      </label>
+    </div>
+          
+       
+    <p class="subtitle is-6"> Dados do seu último emprego:</p>
+​
+    <!-- RESUMO CURRICULO -->
+    <div class="field">
+     <label class="label" for="resume-summary">Resumo do currículo:</label><br>
+     <div class="control">
+       <textarea class="textarea is-info" name="resume-summary" id="resume-summary" maxlength="1000" required="required"></textarea>
+     </div>
+    </div> 
+​
+    <!-- CARGO -->
+    <div class="field">
+      <label class="label" for="office">Cargo:</label>
+      <div class="control">
+        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required">
+      </div>
+    </div>  
+​
+    <!-- DESCRIÇÃO DO CARGO -->
+    <div class="field">
+      <label class="label" for="job-description">Descrição do cargo:</label>
+      <div class="control">
+        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required">
+      </div>
+    </div>  
+​
+    <!-- DATA DE INICIO -->
+    <div class="field">
+      <label class="label" for="date">Data:</label>
+      <div class="control">
+        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required">
+        <span id='message'></span>
+      </div>
+    </div>  
+​
+    <!-- BOTAO ENVIAR -->
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" type="submit">Enviar!</button>
+      </div>
+      <div class="control">
+        <button class="button is-link is-light">Limpar</button>
+      </div>
+    </div>
+        
+  </form>
+
+  <script src="js/script.js"></script> <!--meu-->
+  <script src="js/DatePickerX.min.js"></script><!--biblioteca do js data-->
+  <script src="js/just-validate.min.js"></script><!--biblioteca do js validação-->
+ 
+</body>
+</html>
