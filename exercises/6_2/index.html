@@ -44,7 +44,7 @@
     <div class="field">
       <label class="label" for="cpf">CPF:</label>
       <div class="control">
-       <input class="input is-info is-rounded" type="number" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field="text">
+       <input class="input is-info is-rounded" type="number" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field="cpf">
        </div>
      </div>
 
@@ -52,7 +52,7 @@
     <div class="field">
       <label class="label" for="address">Endereço:</label>
       <div class="control">
-       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número." data-validate-field="text">
+       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número.">
       </div>
     </div>  
 
@@ -60,7 +60,7 @@
     <div class="field">
       <label class="label" for="city">Cidade:</label>
       <div class="control">
-       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required" data-validate-field="text">
+       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required">
       </div>
     </div>  
     
@@ -78,17 +78,17 @@
     <div class="field">
      <label class="label" for='type'>Tipo de moradia:</label>
      <label class="radio" for="type-home">
-        <input type="radio" name="type" id="type-home" required="required" data-validate-field="radio">
+        <input type="radio" name="type" id="type-home" required="required" >
         Casa 
       </label>
      <label class="radio" for="type-apt">
-        <input type="radio" name="type" id="type-apt" required="required" data-validate-field="radio">
+        <input type="radio" name="type" id="type-apt" required="required" >
         Apartamento
       </label>
     </div>
           
        
-    <p class="subtitle"> Dados do seu último emprego:</p>
+    <p class="subtitle is-6"> Dados do seu último emprego:</p>
 ​
     <!-- RESUMO CURRICULO -->
     <div class="field">
@@ -102,7 +102,7 @@
     <div class="field">
       <label class="label" for="office">Cargo:</label>
       <div class="control">
-        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required" data-validate-field="name">
+        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required">
       </div>
     </div>  
 ​
@@ -110,7 +110,7 @@
     <div class="field">
       <label class="label" for="job-description">Descrição do cargo:</label>
       <div class="control">
-        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required" data-validate-field="text">
+        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required">
       </div>
     </div>  
 ​
@@ -118,7 +118,7 @@
     <div class="field">
       <label class="label" for="date">Data:</label>
       <div class="control">
-        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required" data-validate-field="text">
+        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required">
         <span id='message'></span>
       </div>
     </div>  
@@ -139,9 +139,5 @@
   <script src="js/DatePickerX.min.js"></script><!--biblioteca do js data-->
   <script src="js/just-validate.min.js"></script><!--biblioteca do js validação-->
  
- <script>
-  document.getElementById('date').DatePickerX.init()
-  new window.JustValidate('.js-form');
- </script>
 </body>
 </html>
