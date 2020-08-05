@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!--style do justvalidate-->
+  <link rel="stylesheet" href="css/justValidateTooltip.min.css"> <!--style do justvalidate-->
   <link rel="stylesheet" href="css/DatePickerX.min.css"> <!--style do js  data por biblioteca-->
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> <!--fonte-->
   <link href="css/bulma.min.css" rel="stylesheet"> <!--style por biblioteca-->
@@ -22,13 +22,13 @@
   </header>
 
   <!--FORMULÁRIO-->
-  <form action="" method="GET" class="form-work" id="form">
+  <form action="" method="GET" class=" js-form form form-work" id="form ">
        
     <!--NOME-->
     <div class="field">
       <label class="label"for="name">Nome:</label>
       <div class="control">
-       <input class="input is-info is-rounded"type="text" name="name" id="name" maxlength="40" required="required" placeholder="Digite seu nome.">
+       <input class="input is-info is-rounded"type="text" name="name" id="name" maxlength="40" required="required" placeholder="Digite seu nome." data-validate-field="name">
       </div>
     </div>
           
@@ -36,15 +36,15 @@
     <div class="field">
       <label class="label" for="email">Email:</label>
       <div class="control">
-       <input class="input is-info is-rounded"  type="text" name="email" id="email" maxlength="50" required="required" placeholder="Digite seu email." autocomplete="off" data-validate-field="email">
+       <input class="input is-info is-rounded"  type="email" name="email" id="email" maxlength="50" required="required" placeholder="Digite seu email." data-validate-field="email">
       </div>
     </div>
 
     <!--CPF-->
     <div class="field">
       <label class="label" for="cpf">CPF:</label>
-      <div class="control"></div>
-       <input class="input is-info is-rounded"type="text" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field = "cpf">
+      <div class="control">
+       <input class="input is-info is-rounded" type="number" name="cpf" id="cpf" maxlength="11" required="required" placeholder="Apenas números." data-validate-field="text">
        </div>
      </div>
 
@@ -52,7 +52,7 @@
     <div class="field">
       <label class="label" for="address">Endereço:</label>
       <div class="control">
-       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número.">
+       <input class="input is-info is-rounded" type="text" name="address" id="address" maxlength="200" required="required" placeholder="Digite seu endereço com número." data-validate-field="text">
       </div>
     </div>  
 
@@ -60,7 +60,7 @@
     <div class="field">
       <label class="label" for="city">Cidade:</label>
       <div class="control">
-       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required">
+       <input class="input is-info is-rounded" type="text" name="city" id="city" maxlength="28" required="required" data-validate-field="text">
       </div>
     </div>  
     
@@ -69,7 +69,7 @@
       <label class="label" for="state">Estado:</label>
       <div class="control">
         <div class="select is-info is-rounded is-medium">
-          <select required="required" name="state" id="state"></select>
+          <select required="required" name="state" id="state" ></select>
         <div>
       </div>
     </div>
@@ -78,11 +78,11 @@
     <div class="field">
      <label class="label" for='type'>Tipo de moradia:</label>
      <label class="radio" for="type-home">
-        <input type="radio" name="type" id="type-home" required="required">
+        <input type="radio" name="type" id="type-home" required="required" data-validate-field="radio">
         Casa 
       </label>
      <label class="radio" for="type-apt">
-        <input type="radio" name="type" id="type-apt" required="required">
+        <input type="radio" name="type" id="type-apt" required="required" data-validate-field="radio">
         Apartamento
       </label>
     </div>
@@ -102,7 +102,7 @@
     <div class="field">
       <label class="label" for="office">Cargo:</label>
       <div class="control">
-        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required">
+        <input class="input is-info is-rounded" type="text" name="office" id="office" maxlength="40" required="required" data-validate-field="name">
       </div>
     </div>  
 ​
@@ -110,7 +110,7 @@
     <div class="field">
       <label class="label" for="job-description">Descrição do cargo:</label>
       <div class="control">
-        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required">
+        <input class="input is-info is-rounded"type="text" name="job-description" id="job-description" maxlength="500" required="required" data-validate-field="text">
       </div>
     </div>  
 ​
@@ -118,30 +118,30 @@
     <div class="field">
       <label class="label" for="date">Data:</label>
       <div class="control">
-        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required">
+        <input class="input is-info is-rounded"type="text" name="date" id="date" placeholder="dd/mm/aaaa" required="required" data-validate-field="text">
         <span id='message'></span>
       </div>
     </div>  
 ​
-   <!-- BOTAO ENVIAR -->
-   <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-link" type="submit">Enviar!</button>
+    <!-- BOTAO ENVIAR -->
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" type="submit">Enviar!</button>
+      </div>
+      <div class="control">
+        <button class="button is-link is-light">Limpar</button>
+      </div>
     </div>
-    <div class="control">
-      <button class="button is-link is-light">Limpar</button>
-    </div>
-   </div>
-      
-    
+        
   </form>
 
- <script type='text/javascript' src='js/script.js'></script> <!--meu-->
- <script src="js/DatePickerX.min.js"></script> <!--javascript da data por biblioteca -->
- <script src="js/just-validate.min.js"></script> <!--javascript de validação por biblioteca -->
+  <script src="js/script.js"></script> <!--meu-->
+  <script src="js/DatePickerX.min.js"></script><!--biblioteca do js data-->
+  <script src="js/just-validate.min.js"></script><!--biblioteca do js validação-->
+ 
  <script>
   document.getElementById('date').DatePickerX.init()
-  
+  new window.JustValidate('.js-form');
  </script>
 </body>
 </html>
