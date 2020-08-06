@@ -1,7 +1,28 @@
+/*geral*/
+h1{
+ font-family: 'Mystery Quest', cursive;
+}
 
-@media screen and (max-width: 350px){
+h2{
+ font-family: 'Mystery Quest', cursive;
+}
+
+img{
+ border: 3px solid whitesmoke;
+ border-radius: 50%;
+}
+
+figcaption{
+ font-style: italic;
+ text-align: center; 
+}
+
+
+/*media mobile*/
+@media screen and (max-width: 799px){ 
  
  body{
+  background-color: rgb(191, 207, 236);;
   font-size: x-large;
   margin: 5%;
  }
@@ -24,6 +45,66 @@
  
  figure {
      margin: 30px;
+ }
+}
+
+/*media para tela 800px*/
+@media screen and (min-width: 800px){
+ 
+ body{
+  background-color: cornflowerblue;
+  font-size: medium;
+  margin-left:auto;
+  margin-right: auto;
+  width: 60%;
+ }
+ h1{
+  font-size: 2.5em;
+ }
+
+ h2 {
+  font-size: 1.5em;
+ }
+ 
+ img {
+     max-width: 100%;
+ }
+ 
+ figure {
+     margin: 10px;
+ }
+
+ figcaption {
+  font-size: small ;
+ }
+
+ .container {
+  display: flex;
+  justify-content: center;
+ }
+}
+
+
+/*parte 3*/
+@media screen and (min-width: 1300px){
+
+ body{
+  background-color:rgb(53, 112, 223);;
+  font-size: large;
+  margin-left:auto;
+  margin-right: auto;
+  max-width: 80%;
+ }
+
+ h1{
+  font-size: 3em;
+ }
+ 
+ h2 {
+  font-size: 2em;
+ }
+ figcaption {
+  font-size: 15px  ;
  }
 
 }
