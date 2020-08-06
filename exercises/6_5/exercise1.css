@@ -1,0 +1,29 @@
+
+@media screen and (max-width: 350px){
+ 
+ body{
+  font-size: x-large;
+  margin: 5%;
+ }
+ 
+ figcaption{
+  font-size: 20px ;
+ }
+
+ h1{
+  font-size: 1.5em;
+ }
+
+ h2 {
+  font-size: 1em;
+ }
+ 
+ img {
+     max-width: 100%;
+ }
+ 
+ figure {
+     margin: 30px;
+ }
+
+}
