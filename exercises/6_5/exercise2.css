@@ -1,0 +1,97 @@
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+ background-color: thistle;
+ border: 2px solid white;
+ margin: 3% auto 3% auto;
+ width: 80%;
+}
+
+nav {
+ background-color: wheat;
+ padding: 1%;
+}
+
+nav ul{ 
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+
+}
+
+header p {
+ font-size: xx-large;
+ font-family: 'Mystery Quest', cursive;
+ letter-spacing: 1px;
+ text-align: center;
+}
+
+footer {
+ text-align: center;
+}
+
+.style {
+ background-color: wheat;;
+ font-weight: bold;
+}
+
+.container-aside {
+ display: flex;
+ justify-content: space-around;
+ padding: 5%;
+}
+
+
+/*media mobile*/
+@media screen and (max-width: 800px){ 
+ header p{
+  font-size: 40px;
+ }
+
+ .container-aside {
+  display: inline;
+ }
+ 
+ .container-aside h2{
+  text-align: center;
+ }
+}
+
+
+
+/*media média*/
+@media screen and (max-width: 1199px) and (min-width: 799px){ 
+
+ .main-content h1{
+  color: white;
+  text-align: center;
+ }
+
+ footer p{
+  font-style: italic;
+  text-align: center;
+ }
+ 
+}
+
+
+/*media máxima*/
+@media screen and (min-width: 1200px){ 
+  nav li{
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 1% 5% 1% 5%;
+ }
+
+ .main-content p{
+  line-height: 25px;
+  letter-spacing: 2px;
+  }
+}
