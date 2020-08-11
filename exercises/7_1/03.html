@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Click Button</title>
+</head>
+<body>
+ <button id="clickCount" style="font-family: fantasy; font-size: medium;"> Click </button>
+ <br>
+ <label class="label" style="font-family:fantasy; font-size: xx-large; color:brown"></label>
+ 
+ <script>
+
+   let clickCount = document.getElementById('clickCount');
+   var click = 0;
+   let p = document.querySelector('.label');
+
+   clickCount.addEventListener('click',() => {
+     click += 1;
+     p.innerHTML = `Números de click é : ${click} `;
+   });
+
+
+ </script>
+</body>
+</html>
