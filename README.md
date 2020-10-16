@@ -1,7 +1,5 @@
-Pasta de Exercícios 
-=======
+#Trybe - Exercises :rocket:
 
-Exercício
------------
+###*This repository contains exercises developed by Micaeli Teixeira over the course of software development in 2020/2021 at Trybe.*
 
-Essa pasta contém resolução de exercícios para fixação de conteúdo, feitos durante o curso de desenvolvimento de software da Trybe.
+---
