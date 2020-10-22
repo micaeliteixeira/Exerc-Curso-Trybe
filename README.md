@@ -18,3 +18,4 @@ Trybe - Exercises :rocket:
     Section 6: Introduction to Front-end
     Section 7: JavaScript ES6
     Section 8: JavaScript ES6
+    Section 9: Asynchronous JavaScript and Promises
